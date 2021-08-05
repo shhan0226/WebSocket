@@ -9,7 +9,7 @@ URL_VORA = '192.168.0.149/ws/server_infor/'
 
 
 async def INPUT_Info():
-    uri = "ws://"+ URL_VORA
+    uri = "ws://"+ URL_TEST
     async with websockets.connect(uri) as websocket:
         text = input("Please input data : ")
         temp = {'message' : text }
